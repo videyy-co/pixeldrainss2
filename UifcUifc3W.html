@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💥💥GORDITA💥💥</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #fullScreenButton {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <button id="fullScreenButton"></button>
+    <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="100%" src="https://qu.ax/Uifc.mp4" width="100%" id="miVideo"></iframe>
+
+    <script>
+        function ponerEnPantallaCompleta() {
+            const video = document.getElementById('miVideo');
+            if (video.requestFullscreen) {
+                video.requestFullscreen();
+            } else if (video.mozRequestFullScreen) {
+                video.mozRequestFullScreen();
+            } else if (video.webkitRequestFullscreen) {
+                video.webkitRequestFullscreen();
+            } else if (video.msRequestFullscreen) {
+                video.msRequestFullscreen();
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('fullScreenButton');
+            button.addEventListener('click', function() {
+                ponerEnPantallaCompleta();
+                button.remove();
+            });
+        });
+    </script>
+</body>
+</html>
+<script type='text/javascript' src='//lightingstipulate.com/54/99/bb/5499bba837813045f8d9c8b4e3b953f9.js'></script>
+<script type='text/javascript' src='//lightingstipulate.com/21/04/c7/2104c7c5e0c399d2f3e1116bd37ac55f.js'></script>
+
+<script id="_waus5u">var _wau = _wau || []; _wau.push(["small", "directo100", "s5u"]);</script><script async src="//waust.at/s.js"></script>
